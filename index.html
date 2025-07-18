@@ -739,12 +739,11 @@
     <div class="floating-particles" id="particles"></div>
 
     <!-- Notificação de compra -->
-    <div class="purchase-notification" id="purchaseNotification">
-        <div class="notification-header">🔥 Compra Realizada</div>
-        <div class="notification-body"><span id="buyerName"></span> acabou de adquirir o método</div>
-        <div class="notification-time">há <span id="timeAgo"></span> minutos</div>
-    </div>
-
+<div class="purchase-notification" id="purchaseNotification">
+    <div class="notification-header">🔥 Compra Realizada</div>
+    <div class="notification-body"><span id="buyerName"></span> acaba de adquirir el método</div>
+    <div class="notification-time">hace <span id="timeAgo"></span> minutos</div>
+</div>
     <!-- Popup de depoimento -->
     <div class="testimonial-popup" id="testimonialPopup">
         <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
@@ -1141,26 +1140,26 @@
        }
 
        function showPurchaseNotification() {
-           const notification = document.getElementById('purchaseNotification');
-           const nameElement = document.getElementById('buyerName');
-           const timeElement = document.getElementById('timeAgo');
-           
-           const randomName = buyerNames[Math.floor(Math.random() * buyerNames.length)];
-           const randomTime = Math.floor(Math.random() * 12) + 1;
-           
-           nameElement.textContent = randomName;
-           timeElement.textContent = randomTime;
-           
-           notification.classList.add('show');
-           
-           // Reduzir contador de vagas
-           spotsLeft = Math.max(12, spotsLeft - 1);
-           updateSpotsCounter();
-           
-           setTimeout(() => {
-               notification.classList.remove('show');
-           }, 5500);
-       }
+    const notification = document.getElementById('purchaseNotification');
+    const nameElement = document.getElementById('buyerName');
+    const timeElement = document.getElementById('timeAgo');
+    
+    const randomName = buyerNames[Math.floor(Math.random() * buyerNames.length)];
+    const randomTime = Math.floor(Math.random() * 12) + 1;
+    
+    nameElement.textContent = randomName;
+    timeElement.textContent = randomTime;
+    
+    notification.classList.add('show');
+    
+    // Reduzir contador de vagas
+    spotsLeft = Math.max(12, spotsLeft - 1);
+    updateSpotsCounter();
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 5500);
+}
 
        function startTestimonialSystem() {
            setInterval(() => {
