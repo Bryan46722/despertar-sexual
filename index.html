@@ -699,39 +699,243 @@
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
-            .hero-section h1 {
-                font-size: 3.5em;
-            }
-            
-            .container {
-                padding: 15px;
-            }
-            
-            .story-section, .quiz-section, .final-offer {
-                padding: 50px 30px;
-            }
-            
-            .question {
-                font-size: 2.2em;
-            }
-            
-            .answer {
-                padding: 25px 30px;
-                font-size: 1.2em;
-            }
-            
-            .purchase-notification {
-                right: 15px;
-                max-width: 320px;
-                padding: 20px 25px;
-            }
-        }
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        margin: 10px 0;
+        border-radius: 20px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    
+    .hero-description {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+    
+    .urgency-banner {
+        font-size: 1em;
+        padding: 12px 20px;
+        margin: 15px 0;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .story-section {
+        padding: 40px 20px;
+        margin: 20px 0;
+        border-radius: 20px;
+    }
+    
+    .story-section h2 {
+        font-size: 2.2em;
+        margin-bottom: 25px;
+    }
+    
+    .story-section p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .story-quote {
+        font-size: 1.2em;
+        padding: 20px;
+        margin: 25px 0;
+    }
+    
+    .cta-button {
+        font-size: 1.1em;
+        padding: 20px 30px;
+        letter-spacing: 1px;
+    }
+    
+    .quiz-section {
+        padding: 40px 20px;
+        margin: 20px 0;
+        border-radius: 20px;
+    }
+    
+    .progress-text {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    
+    .progress-bar {
+        height: 12px;
+        margin: 15px 0;
+    }
+    
+    .question {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+    
+    .question-context {
+        font-size: 1em;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .answer {
+        padding: 20px 25px;
+        font-size: 1.1em;
+        margin: 15px 0;
+        border-radius: 15px;
+    }
+    
+    .answer:hover {
+        transform: translateX(10px) scale(1.01);
+    }
+    
+    .final-offer {
+        padding: 40px 20px;
+        margin: 20px 0;
+        border-radius: 20px;
+    }
+    
+    .final-offer h2 {
+        font-size: 2.5em;
+        margin-bottom: 25px;
+    }
+    
+    .personal-message {
+        font-size: 1.3em;
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .timer {
+        font-size: 1.2em;
+        padding: 15px 25px;
+        margin: 25px 0;
+    }
+    
+    .current-price {
+        font-size: 4em;
+        margin: 20px 0;
+    }
+    
+    .original-price {
+        font-size: 2em;
+    }
+    
+    .discount-badge {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+    
+    .benefits-list {
+        padding: 25px;
+        margin: 30px auto;
+    }
+    
+    .benefit-item {
+        font-size: 1.1em;
+        margin: 15px 0;
+        padding-left: 30px;
+    }
+    
+    .security-badges {
+        gap: 15px;
+        margin: 25px 0;
+    }
+    
+    .security-badge {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    
+    .purchase-notification {
+        right: 10px;
+        top: 10px;
+        max-width: 280px;
+        padding: 15px 20px;
+        border-radius: 15px;
+    }
+    
+    .notification-header {
+        font-size: 1em;
+    }
+    
+    .notification-body {
+        font-size: 0.9em;
+    }
+    
+    .testimonial-popup {
+        bottom: 10px;
+        left: 10px;
+        max-width: 280px;
+        padding: 15px 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 0.9em;
+    }
+    
+    .scarcity-counter {
+        font-size: 1em;
+        padding: 15px 20px;
+        margin: 20px 0;
+    }
+}
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
+/* Para telas muito pequenas */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+    
+    .hero-description {
+        font-size: 1em;
+    }
+    
+    .story-section h2 {
+        font-size: 1.8em;
+    }
+    
+    .question {
+        font-size: 1.5em;
+    }
+    
+    .final-offer h2 {
+        font-size: 2em;
+    }
+    
+    .current-price {
+        font-size: 3em;
+    }
+    
+    .purchase-notification {
+        max-width: 250px;
+        right: 5px;
+        top: 5px;
+    }
+    
+    .testimonial-popup {
+        max-width: 250px;
+        left: 5px;
+        bottom: 5px;
+    }
+}
     </style>
 </head>
 <body>
@@ -1136,7 +1340,7 @@
        function startNotificationSystem() {
            setInterval(() => {
                showPurchaseNotification();
-           }, Math.random() * 12000 + 8000); // Entre 8-20 segundos
+           }, Math.random() * 25000 + 20000); // Entre 8-20 segundos
        }
 
        function showPurchaseNotification() {
